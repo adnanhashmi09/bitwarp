@@ -1,7 +1,5 @@
 #![allow(dead_code)]
 
-// use std::println;
-
 pub struct Unpacker<F>
 where
     F: Fn(String) -> Option<String>,

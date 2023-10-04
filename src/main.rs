@@ -24,7 +24,6 @@ fn main() {
     println!("{:#?}", unpacked_buffer);
 
     let unpacker = Unpacker::new(packed.clone(), &move |s: String| -> Option<String> {
-        // println!("{:#?}", s);
         match s.as_str() {
             "101" => Some("2".to_string()),
             "00001000" => Some("3".to_string()),
